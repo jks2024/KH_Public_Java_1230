@@ -13,6 +13,5 @@ public class NumberDiv {
         b = (number % 100) / 10;
         c = number % 10;
         System.out.println("100의 자리 : " + a + ", 10자리 : " + b + ", 1의 자리 : " + c);
-
     }
 }
