@@ -1,5 +1,4 @@
 package 소수판별하기;
-import javax.management.DynamicMBean;
 import java.util.Scanner;
 // 메소드를 이용한 소수 판별하기
 // 1과 자기자신 이외에는 나누어지지 않는 수
