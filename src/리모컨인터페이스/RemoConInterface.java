@@ -1,5 +1,4 @@
 package 리모컨인터페이스;
-
 import java.util.Scanner;
 
 public class RemoConInterface {
