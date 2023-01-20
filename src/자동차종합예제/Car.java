@@ -1,11 +1,11 @@
 package 자동차종합예제;
 
 public abstract class Car {
-    int maxSpeed; // 최고속도
-    int fuelEff;  // 연비
-    int fuelTank; // 연료 탱크 크기
-    int seatCnt;  // 좌석수
-    String name;  // 자동차 이름
+    protected int maxSpeed; // 최고속도
+    protected int fuelEff;  // 연비
+    protected int fuelTank; // 연료 탱크 크기
+    protected int seatCnt;  // 좌석수
+    protected String name;  // 자동차 이름
 
     abstract void setMode(boolean isMode);
 
@@ -13,6 +13,10 @@ public abstract class Car {
     int getMovingCnt(int passCnt) {
         if(passCnt % seatCnt != 0) return (passCnt / seatCnt) + 1;
         return passCnt / seatCnt;
+    }
+
+    public String getName() {
+        return name;
     }
 
     // 총 이동 비용

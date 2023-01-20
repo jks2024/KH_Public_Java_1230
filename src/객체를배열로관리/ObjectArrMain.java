@@ -1,6 +1,5 @@
 package 객체를배열로관리;
 import java.util.Scanner;
-
 public class ObjectArrMain {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
