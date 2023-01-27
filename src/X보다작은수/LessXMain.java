@@ -1,4 +1,6 @@
 package X보다작은수;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
 // 첫째줄에 N과 X가 주어짐
 // 둘째 줄에 수열 A를 이루는 정수 N개가 주어진다.
@@ -11,11 +13,16 @@ public class LessXMain {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt(); // 배열의 갯수
         int x = sc.nextInt(); // 주어진 수
-        int[] arr = new int[n];
-        for(int i = 0; i < arr.length; i++) {
-            arr[i] = sc.nextInt(); // 주어진 n 만큼의 수를 입력 받음
-            if(arr[i] < x) System.out.print(arr[i] + " ");
+//        int[] arr = new int[n];
+//        for(int i = 0; i < arr.length; i++) {
+//            arr[i] = sc.nextInt(); // 주어진 n 만큼의 수를 입력 받음
+//            if(arr[i] < x) System.out.print(arr[i] + " ");
+//        }
+//        System.out.println();
+        List<Integer> list = new ArrayList<>();
+        for(int i = 0; i < n; i++) {
+            list.add(sc.nextInt());
+            if(list.get(i) < x) System.out.print(list.get(i) + " ");
         }
-        System.out.println();
     }
 }

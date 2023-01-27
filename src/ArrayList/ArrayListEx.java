@@ -1,6 +1,7 @@
 package ArrayList;
 import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 // 특정 위치에 삽입 : add()
 public class ArrayListEx {
@@ -17,8 +18,11 @@ public class ArrayListEx {
 //        System.out.println(pitches.remove("140")); // 해당 값이 있으면 삭제하고 true 반환, 없으면 false
 //        System.out.println(pitches.remove(0)); // 해당 인덱스의 값을 삭제하고 해당 값을 리턴
 //        System.out.println(pitches);
-        String[] data = {"138", "129", "142"};
+        String[] data = {"138", "129", "142", "150", "166", "123"};
         List<String> pitches = new ArrayList<>(Arrays.asList(data)); // 이미 만들어져 있는 배열을 추가
+        //String result = String.join(",", pitches); // 콤마로 구분하여 문자열 만들기
+        //pitches.sort(Comparator.naturalOrder()); // 오름차순 정렬
+        pitches.sort(Comparator.reverseOrder()); // 내림차순 정렬
         System.out.println(pitches);
 
     }
