@@ -1,14 +1,12 @@
 package 해시맵커피;
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Map;
-import java.util.Scanner;
+import java.util.*;
+
 // HashMap? 키와 값의 Pair로 구성된 형태
 // 동일 여부 판단을 HashCode를 통해서 함.
 // 키는 중복 허용을 하지 않음, 단 값을 중복 허용을 함.
 // 순서를 보장하지 않는다.
 public class CoffeeMenuEx {
-    Map<String, MenuInfo> map = new Hashtable<>();
+    Map<String, MenuInfo> map = new HashMap<>();
     public static void main(String[] args) {
         CoffeeMenuEx coffee = new CoffeeMenuEx();
         coffee.makeMenu();
@@ -18,6 +16,12 @@ public class CoffeeMenuEx {
         map.put("Americano", new MenuInfo("Americano", 2500, "Coffee", "기본 커피 입니다."));
         map.put("Espresso", new MenuInfo("Espresso", 2500, "Coffee", "진한 커피 입니다."));
         map.put("Latte", new MenuInfo("Latte", 4000, "Coffee", "우유가 들어 있어요."));
+        map.put("ColdBrew", new MenuInfo("ColdBrew", 5500, "Coffee", "비싼 커피 입니다."));
+        map.put("LemonAde", new MenuInfo("LemonAde", 5000, "Ade", "레몬에이드 입니다."));
+        map.put("PeachAde", new MenuInfo("PeachAde", 5800, "Ade", "복숭아에이드 입니다."));
+        map.put("BlackTea", new MenuInfo("BlackTea", 6000, "Tea", "홍차 입니다."));
+        map.put("GreenTea", new MenuInfo("GreenTea", 5300, "Tea", "녹차 입니다."));
+        map.put("MilkTea", new MenuInfo("MilkTea", 4500, "Tea", "밀크티 입니다."));
     }
     void selectMenu() {
         Scanner sc = new Scanner(System.in);

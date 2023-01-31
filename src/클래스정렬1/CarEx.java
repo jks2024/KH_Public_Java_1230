@@ -1,6 +1,6 @@
 package 클래스정렬1;
 
-public class CarEx implements Comparable<CarEx>{
+public class CarEx implements Comparable<CarEx> {
     public String modelName;
     public int modelYear;
     public String color;
@@ -17,6 +17,9 @@ public class CarEx implements Comparable<CarEx>{
 //            return this.modelName.compareTo(o.modelName); // 이름을 기분으로 사전순 정렬
 //        } else if(this.modelYear < o.modelYear) return -1;
 //        else return 1;
-        return this.color.compareTo(o.color);
+        if(this.color.compareTo(o.color) == 0) {
+            return this.modelName.compareTo(o.modelName);
+        }
+        return -1;
     }
 }

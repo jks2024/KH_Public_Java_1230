@@ -22,13 +22,13 @@ public class MapTestEx1 {
         // 객체 찾기
         System.out.println(map.get("동그라미"));
         // map 순회 방법 (반복자 : iterator 사용)
-//        Set<String> keySet = map.keySet();
-//        Iterator<String> iterator = keySet.iterator();
-//        while(iterator.hasNext()) {
-//            String key = iterator.next();
-//            Integer value = map.get(key);
-//            System.out.println(key + " : " + value);
-//        }
+        Set<String> keySet = map.keySet();
+        Iterator<String> iterator = keySet.iterator();
+        while(iterator.hasNext()) {
+            String key = iterator.next();
+            Integer value = map.get(key);
+            System.out.println(key + " : " + value);
+        }
 
         map.remove("최수연"); // 키로 Map.entry 제거
         System.out.println("총 Entry 수 : " + map.size());
