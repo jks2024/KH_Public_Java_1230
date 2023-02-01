@@ -7,7 +7,6 @@ import java.util.TreeSet;
 // 문제 : 첫 번째 줄에 학생의 수 N을 입력
 //       두번째 줄 부터  학생의 이름과 성적을 공백 기준으로 입력
 // 출력 조건 : 모든 학생의 이름을 성적이 낮은 순서대로 출력 하기
-// 이 문제를 푸신분은 => HashMap으로 만든 커피 메뉴에 메뉴를 10개를 입력하고 이를 가격순으로 정렬 되도록 변경
 public class ClassSortEx3 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
